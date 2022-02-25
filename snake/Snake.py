@@ -14,8 +14,8 @@ window.keypad(1)
 window.timeout(100) #Refresh every 100ms
 
 #Set the Snakes initial position
-snake_x = screenWidth/4
-snake_y = screenHeight/2
+snake_x = screenWidth//4
+snake_y = screenHeight//2
 
 #Create the body of the snake
 snakeBody = [
@@ -25,7 +25,8 @@ snakeBody = [
 ]
 
 #Create 'food'
-food = [screenHeight/2, screenWidth/2] 
+food = [screenHeight//2, screenWidth//2] 
+window.addch(food[0], food[1], curses.ACS_PI)
 
 #Create game system
 key = curses.KEY_RIGHT #Initial movement
